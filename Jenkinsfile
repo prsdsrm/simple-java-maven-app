@@ -4,11 +4,12 @@ env.APR_VER = "1.7.0"
 env.APRUTIL_VER = "1.6.1"
 
 pipeline {
-    agent {
-        docker {
-            image.id '9bdd9a53ce7b'
-         }
-    }
+	agent {
+  docker {
+    image '9bdd9a53ce7b'
+    reuseNode true
+  }
+}
     stages {
         stage("Compile Apache2441") {
             steps {
