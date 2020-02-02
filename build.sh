@@ -4,7 +4,7 @@ export PKG_HOME=/home/
 export DEST_HOME=/opt/software
 
 cd $PKG_HOME
-mkdir -p $DEST_HOME
+sudo mkdir -p $DEST_HOME
 
 wget https://archive.apache.org/dist/httpd/httpd-$APACHE_VER.tar.gz
 wget https://www.openssl.org/source/openssl-$OPENSSL_VER.tar.gz
