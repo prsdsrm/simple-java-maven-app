@@ -6,13 +6,14 @@ def APRUTIL_VER = "1.6.1"
 pipeline {
     agent {
         docker {
-            image 'fd5385c87db1'
+            image '9bdd9a53ce7b'
          }
     }
     stages {
         stage("Compile Apache2441") {
             steps {
 		sh "id"
+		sh "hostname"
                 sh './build.sh'
             }
         }
