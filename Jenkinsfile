@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("install") {
             steps {
-                sh 'rpmbuild --version'
+                sh './test123test.sh'
             }
         }
     }
