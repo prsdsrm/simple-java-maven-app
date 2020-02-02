@@ -9,6 +9,7 @@ cd $PKG_HOME
 
 wget https://www.openssl.org/source/openssl-"$OPENSSL_VER".tar.gz
 
+[[ ! -d /home/openssl ]] && mkdir openssl
 tar xzf openssl-"$OPENSSL_VER".tar.gz -C openssl
 
 cd openssl
