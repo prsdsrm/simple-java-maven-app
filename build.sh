@@ -1,4 +1,10 @@
 #!/bin/bash -xe
+
+echo "$APACHE_VER"
+echo "$OPENSSL_VER"
+echo "$APR_VER"
+echo "$APRUTIL_VER"
+
 export PATH=$PATH:
 export PKG_HOME=/home/
 export DEST_HOME=/home
