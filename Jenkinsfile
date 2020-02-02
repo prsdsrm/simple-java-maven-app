@@ -6,7 +6,7 @@ env.APRUTIL_VER = "1.6.1"
 pipeline {
     agent {
         docker {
-            image '9bdd9a53ce7b'
+            image.id '9bdd9a53ce7b'
          }
     }
     stages {
