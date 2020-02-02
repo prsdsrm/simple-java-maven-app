@@ -8,6 +8,7 @@ pipeline {
   docker {
     image '9bdd9a53ce7b'
     reuseNode true
+    args '-u root:sudo'
   }
 }
     stages {
