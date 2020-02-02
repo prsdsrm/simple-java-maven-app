@@ -1,7 +1,7 @@
-def APACHE_VER = "2.4.41"
-def OPENSSL_VER = "1.1.1c"
-def APR_VER = "1.7.0"
-def APRUTIL_VER = "1.6.1"
+env.APACHE_VER = "2.4.41"
+env.OPENSSL_VER = "1.1.1c"
+env.APR_VER = "1.7.0"
+env.APRUTIL_VER = "1.6.1"
 
 pipeline {
     agent {
