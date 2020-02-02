@@ -12,6 +12,7 @@ pipeline {
     stages {
         stage("Compile Apache2441") {
             steps {
+		sh "id"
                 sh './build.sh'
             }
         }
