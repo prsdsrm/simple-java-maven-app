@@ -9,8 +9,8 @@ cd $PKG_HOME
 
 wget https://www.openssl.org/source/openssl-"$OPENSSL_VER".tar.gz
 
-tar xzf openssl-"$OPENSSL_VER".tar.gz
+tar xzf openssl-"$OPENSSL_VER".tar.gz -C openssl
 
-cd *$OpenSSL_VERSION*
+cd openssl
 ./config --prefix=$DEST_HOME/openssl --openssldir=$DEST_HOME/openssl shared zlib
 make && make install
