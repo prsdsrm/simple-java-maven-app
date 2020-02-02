@@ -5,10 +5,10 @@ export DEST_HOME=/home
 
 cd $PKG_HOME
 
-wget https://archive.apache.org/dist/httpd/httpd-$APACHE_VER.tar.gz
-wget https://www.openssl.org/source/openssl-$OPENSSL_VER.tar.gz
-wget http://mirrors.gigenet.com/apache//apr/apr-$APR_VER.tar.gz
-wget http://mirrors.gigenet.com/apache//apr/apr-util-$APRUTIL_VER.tar.gz
+wget https://archive.apache.org/dist/httpd/httpd-"$APACHE_VER".tar.gz
+wget https://www.openssl.org/source/openssl-"$OPENSSL_VER".tar.gz
+wget http://mirrors.gigenet.com/apache//apr/apr-"$APR_VER".tar.gz
+wget http://mirrors.gigenet.com/apache//apr/apr-util-"$APRUTIL_VER".tar.gz
 
 tar xzf httpd-2.4.41.tar.gz
 tar xzf openssl-.1.1.1d.tar.gz
