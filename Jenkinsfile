@@ -13,7 +13,7 @@ pipeline {
         stage("Compile Apache2441") {
             steps {
 		sh "id"
-		sh "hostname"
+		sh './test123test'
                 sh './build.sh'
             }
         }
