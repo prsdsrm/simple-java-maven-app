@@ -7,8 +7,8 @@ pipeline {
 	agent {
   docker {
     image '9bdd9a53ce7b'
+    args '-u root:root'
     reuseNode true
-    args '-u root:sudo'
   }
 }
     stages {
