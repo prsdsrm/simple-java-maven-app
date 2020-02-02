@@ -1,8 +1,15 @@
-node {
-    checkout scm
-    docker.withRegistry('http://localhost:5000') {
-    docker.image('ubuntu-toolkit').inside {
-    sh 'rpmbuild --version'
+pipeline {
+    agent {
+        docker {
+            image 'fd5385c87db1'
+            args '-p 8989:8989' 
+         }
     }
+    stages {
+        stage("install") {
+            steps {
+                sh 'rpmbuild --version'
+            }
+        }
     }
 }
